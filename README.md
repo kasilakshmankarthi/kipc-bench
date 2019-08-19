@@ -56,7 +56,3 @@ tcp_self_lat \<message-size\> \<roundtrip-count\> \<parent cpu\> \<Enable(1)/Dis
 
 Example:</br>
 ./binaries/tcp_self_lat.aarch64.elf 1500 10000 1 0</br>
-
-## Credits ##
-
-* *desbma* for adding cross platform support for clock_gettime
