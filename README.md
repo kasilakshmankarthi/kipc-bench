@@ -1,7 +1,7 @@
 kipc-bench
 =========
 
-Some very crude IPC benchmarks.
+Some very crude IPC benchmarks modified from this source: https://github.com/rigtorp/ipc-bench
 
 ping-pong latency benchmarks:
 * pipes
