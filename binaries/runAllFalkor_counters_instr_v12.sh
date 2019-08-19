@@ -1,19 +1,4 @@
 #! /bin/bash
-############################################################################
-# 01/26/17 KBurke - added $5 arguement for user and kernel space collection
-# 02/08/17 KBurke - changed arguements to allow for specific runs to take place 
-# 03/05/17 KBurke - Added support to designate specific CPU,l2.l3, bus, or ddr
-#                   Removed arguement that was used for grep searches (not needed)
-#                   Allowed users to specify all, CP, L2, or L3 as first arguement
-# 03/17/17 KBurke - Added DDR events
-# 03/27/17 KBurke - Added append capability to output file while default remains 'no overwrite'
-# 04/10/17 KBurke - Added check for new L2cache encoding requirement in 4.10+ kernels 
-# 05/01/17 KBurke - Added echo command at end of event collection to show completion
-# 08/24/17 KBurke - Added support for new qcom_pmuv3_0 names that are being phased in
-# 09/01/17 KBurke - Fixed support for passing in individual index numbers
-# 09/07/17 KBurke - Added some error messages from the get go and added support for l3cache_0 in anticipation
-# 09/09/17 KBurke - Restored wrtie to file when looking for index list
-############################################################################
 #-------------------------------------------------------------------------------------------------------------------
 # $1 a run count designation allowing the user to select a specific set of events to collect
 #       5 would run the 5th set of events for all units (CP, L2, L3)
